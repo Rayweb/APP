@@ -1,0 +1,260 @@
+<html>
+<head>
+	<title>Building a BoxScore app with Marionette</title>
+	<script type="text/javascript" src="../libs/jquery-min.js"></script>
+	<script type="text/javascript" src="../libs/underscore-min.js"></script>
+	<script type="text/javascript" src="../libs/backbone.js"></script>
+	<script type="text/javascript" src="../libs/backbone.marionette.min.js"></script>
+	<script type="text/javascript" src="../libs/backbone-modelbinder-min.js"></script>
+	<script type="text/javascript" src="../libs/bootstrap/js/bootstrap.min.js"></script>
+	<link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Project name</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link">Username</a>
+            </p>
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div id="application" class="container-fluid">
+      <div class="row-fluid">
+        <div id="leftRegion" class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Sidebar</li>
+              <li class="active"><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/leftRegion-->
+        <div id="centerRegion" class="span6">
+			<br/>
+			<br/>
+			<br/>
+			<div  id="reg-box-line_score" class="row-fluid">
+				<div class="span3">
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img src="http://l.yimg.com/a/i/us/sp/v/nba/teams/1/50x50w/kni_w.jpg" width="50" height="50" border="0">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">New York Knicks</h4>
+							<em>99</em>
+						</div>
+					</div>
+				</div>
+				<div id="board" class="span3">
+					<span class="final" title="Final">Final</span>
+				</div>
+				<div class="span3">
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img src="http://l.yimg.com/a/i/us/sp/v/nba/teams/1/50x50w/ind.gif" width="50" height="50" border="0">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Indiana Pacers</h4>
+							<em>106</em>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<div id="board" class="row-fluid">
+				<div>
+					<table class="table table-bordered">
+							<thead>
+								<tr> 
+									<th class="team title" >Team</th> 
+									<th class="period active" >1</th>
+									<th class="period active" >2</th>
+									<th class="period active" >3</th>
+									<th class="period active" >4</th>
+									<th class="score" >Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="team title" scope="row">NY</td>
+									<td class="period">27</td>
+									<td class="period">20</td>
+									<td class="period">34</td>
+									<td class="period">18</td>
+									<td class="score"><span>99</span></td> 
+								</tr>
+								<tr>
+									<td class="team title" scope="row">IND</td>
+									<td class="period">29</td>
+									<td class="period">26</td>
+									<td class="period">26</td>
+									<td class="period">25</td>
+									<td class="score winner"><span>106</span></td>
+								</tr>
+							</tbody>
+						</table>
+				</div>
+			</div>
+			<br/>
+			<div id="statistics">
+			
+			</div>
+		</div>
+		<div id="rightRegion" class="span3">
+			<div class="well sidebar-nav">
+				<div id="top_performers">
+					<div>
+						<h4>Top Performers</h4>
+					</div>
+					<div>
+						<dl> 
+							<dt>New York</dt>
+								<dd>
+									<a href="/nba/players/3706">
+										<img src="http://l.yimg.com/iu/api/res/1.2/UGR42Y0_1yqLLQcGqOwx0Q--/YXBwaWQ9eXZpZGVvO2NoPTg2MDtjcj0xO2N3PTY1OTtkeD0xO2R5PTE7Zmk9dWxjcm9wO2g9NjA7cT0xMDA7dz00Ng--/http://l.yimg.com/j/assets/i/us/sp/v/nba/players_l/20121217/3706.jpg" alt="C. Anthony" width="46" height="60" border="0">
+									</a>
+									<div>
+										<h6>
+											<span>
+												<a href="/nba/players/3706">Carmelo Anthony</a>
+											</span>
+										</h6>
+										<p>15-29,&nbsp;39&nbsp;Pts<br>
+											7&nbsp;Rebs,&nbsp;2&nbsp;Assists
+										</p>
+									</div>
+								</dd>
+							<dt>Indiana</dt>
+								<dd>
+									<a href="/nba/players/4771">
+										<img src="http://l.yimg.com/iu/api/res/1.2/45ZtbqQZpKx2.Mwe8uXOQg--/YXBwaWQ9eXZpZGVvO2NoPTg2MDtjcj0xO2N3PTY1OTtkeD0xO2R5PTE7Zmk9dWxjcm9wO2g9NjA7cT0xMDA7dz00Ng--/http://l.yimg.com/j/assets/i/us/sp/v/nba/players_l/20121217/4771.jpg" alt="L. Stephenson" width="46" height="60" border="0">
+									</a>
+									<div>
+										<h6>
+											<span>
+												<a href="/nba/players/4771">Lance Stephenson</a>
+											</span>
+										</h6>
+										<p>9-13,&nbsp;25&nbsp;Pts<br>
+											10&nbsp;Rebs,&nbsp;3&nbsp;Assists
+										</p>
+									</div>
+								</dd>
+						</dl>
+					</div>
+				</div>
+			</div><!--/.well -->
+        </div><!--/rightRegion-->
+      </div><!--/row-->
+      <hr>
+      <footer>
+        <p>© Company 2013</p>
+      </footer>
+    </div><!--/.fluid-container--> 
+	<script type="text/template" id="team-statistics">
+	<table class="table table-bordered">
+					<caption>Team Statistics</caption>
+					<thead>
+					<tr>
+						<th title="Number">#</th>
+						<th title="Player Name">Players</th>
+						<th title="Position">Pos</th> 
+						<th title="Minutes in Play">Min</th>
+						<th title="Field Goals">FG</th>
+						<th title="Three Pointers">3Pt</th>
+						<th title="Free Throws">FT</th>
+						<th title="Off Rebounds">Off</th>
+						<th title="Total Rebounds">Reb</th>
+						<th title="Assists">Ast</th>
+						<th title="Turnovers">TO</th>
+						<th title="Steals">Stl</th>
+						<th title="Blocked Shots">BS</th>
+						<th title="Personal Fouls">PF</th>
+						<th title="Points">Pts</th>
+					</tr>
+					</thead>
+					<tbody id="playersContainer">
+					</tbody>
+				</table>	
+	</script>
+	<script type="text/template" id="player-statistics">
+		<td id="number" name="number"></td>
+		<td>
+			<span>
+				<a href="#" id="name" name="name"></a>
+			</span>          
+		</td>
+		<td id="position" name="position"></td>
+		<td id="minutesPlayed" name="minutesPlayed"></td>
+		<td>
+			<span id="fieldGoalsAttempted" name="fieldGoalsAttempted"></span>
+			<span>-</span>
+			<span id="fieldGoalsMade" name="fieldGoalsMade"></span>
+		</td>
+		<td>
+			<span id="threePointShootsAttempted" name="threePointShootsAttempted"></span>
+			<span>-</span>
+			<span id="threePointShootsMade" name="threePointShootsMade"></span>
+		</td>
+		<td>
+			<span id="freeThrowsAttempted" name="freeThrowsAttempted"></span>
+			<span>-</span>
+			<span id="freeThrowsAttempted" name="freeThrowsAttempted"></span>
+		</td>
+		<td id="offensiveRebounds" name="offensiveRebounds"></td>
+		<td id="totalRebounts" name="totalRebounts"></td>
+		<td id="assists" name="assists">5</td>
+		<td id="turnOvers" name="turnOvers">2</td>
+		<td id="steals" name="steals">1</td>
+		<td id="blocks" name="blocks"></td>
+		<td id="fouls" name="fouls"></td>
+		<td id="points" name="points"></td>
+	</script>
+	<script type="text/template" id="statistics-layout">
+				<div id="awayTeam" class="row-fluid">
+					<div>
+						<h4>New York</h4>
+					</div>
+					<div id="playersAway">
+					
+					</div>
+				</div>
+				<div id="homeTeam" class="row-fluid">
+					<div>
+						<h4>Indiana</h4>
+					</div>
+					<div id="playersHome">
+					</div>	
+				</div>
+
+	</script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

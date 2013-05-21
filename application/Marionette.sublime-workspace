@@ -1,0 +1,334 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"players",
+				"playersHome"
+			],
+			[
+				"B",
+				"Backbone.Marionette"
+			],
+			[
+				"ad",
+				"addRegions(regions)	backbone.marionette.min.js"
+			],
+			[
+				"Phone",
+				"PhoneView"
+			],
+			[
+				"i",
+				"input"
+			],
+			[
+				"l",
+				"lorem	lorem - One sentence"
+			],
+			[
+				"a",
+				"Marionette.AppRouter"
+			],
+			[
+				"e",
+				"EventAggregator"
+			],
+			[
+				"b",
+				"item:before:render"
+			],
+			[
+				"p",
+				"Application"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Index.html",
+			"settings":
+			{
+				"buffer_size": 914,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 1373,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Ray/Desktop/APP/BoxScore/index.js",
+			"settings":
+			{
+				"buffer_size": 1910,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 360.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"se j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sn ",
+				"Snippet: script template"
+			],
+			[
+				"set j	",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"sni sc",
+				"Snippet: script template"
+			],
+			[
+				"sn",
+				"Snippet: html"
+			],
+			[
+				"set h",
+				"Set Syntax: HTML"
+			],
+			[
+				"set",
+				"Set Syntax: C#"
+			],
+			[
+				"sni",
+				"Snippet: siblings"
+			],
+			[
+				"set sj",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 420.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Ray/Desktop/APP/BoxScore/index.js",
+		"/C/Users/Ray/Desktop/APP/BoxScore/index.html",
+		"/C/Users/Ray/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Ray/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/C/Users/Ray/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Index.html",
+					"settings":
+					{
+						"buffer_size": 914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								914,
+								914
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.js",
+					"settings":
+					{
+						"buffer_size": 1373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								204
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Ray/Desktop/APP/BoxScore/index.js",
+					"settings":
+					{
+						"buffer_size": 1910,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								144
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true
+}
